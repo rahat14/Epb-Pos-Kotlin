@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AKR/EPB-POS/Epb-Pos-Kotlin-/app/src/main/res/drawable/grad.xml" value="0.35128205128205126" />
+        <entry key="..\:/AKR/EPB-POS/Epb-Pos-Kotlin-/app/src/main/res/layout/item_pos_product.xml" value="0.340625" />
+        <entry key="..\:/AKR/EPB-POS/Epb-Pos-Kotlin-/app/src/main/res/layout/item_product_vertical.xml" value="0.340625" />
+        <entry key="..\:/AKR/EPB-POS/Epb-Pos-Kotlin-/app/src/main/res/layout/item_supplier.xml" value="0.340625" />
+        <entry key="..\:/AKR/EPB-POS/Epb-Pos-Kotlin-/app/src/main/res/layout/row_cart_item.xml" value="0.340625" />
         <entry key="..\:/AKR/EPB-POS/app/src/main/res/font/days_one.xml" value="0.36512820512820515" />
         <entry key="..\:/AKR/EPB-POS/app/src/main/res/layout/activity_main.xml" value="0.3255208333333333" />
         <entry key="..\:/AKR/EPB-POS/app/src/main/res/layout/activity_new_pos.xml" value="0.340625" />

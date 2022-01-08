@@ -40,5 +40,5 @@ data class Items(
     var row_updated: String = "",
     var description: String = "",
 
-
+    var qty: Int = 0,
     )

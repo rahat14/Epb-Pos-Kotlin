@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.pos.setOnClickListener {
-            startActivity(Intent(applicationContext, PosPage::class.java))
+            startActivity(Intent(applicationContext, ProductList::class.java))
         }
 
         binding.customer.setOnClickListener {

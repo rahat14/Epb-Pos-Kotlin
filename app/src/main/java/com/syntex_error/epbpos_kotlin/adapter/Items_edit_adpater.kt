@@ -1,4 +1,4 @@
-package com.syntex_error.epbpos_kotlin
+package com.syntex_error.epbpos_kotlin.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.syntex_error.epbpos_kotlin.R
 import com.syntex_error.epbpos_kotlin.database.models.Items
+import com.syntex_error.epbpos_kotlin.databinding.ItemPosProductBinding
 import com.syntex_error.epbpos_kotlin.databinding.ItemProductHorizontralBinding
 
 class Items_edit_adpater(
@@ -45,7 +47,7 @@ class Items_edit_adpater(
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         when (holder) {
             is itemViewholder -> {
-                holder.bind(differ.currentList.get(position))
+                holder.bind(differ.currentList[position])
             }
         }
     }
@@ -71,10 +73,10 @@ class Items_edit_adpater(
                 interaction?.onItemSelected(adapterPosition, item)
             }
 
+
             binding.nameTv.text = item.name
             binding.buyPriceTv.text = "${item.dealer_price}"
             binding.sellPriceTv.text = "${item.sale_price}"
-
 
         }
     }

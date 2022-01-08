@@ -4,17 +4,18 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.syntex_error.epbpos_kotlin.adapter.Items_edit_adpater
+import com.syntex_error.epbpos_kotlin.adapter.Items_pos_adpater
 import com.syntex_error.epbpos_kotlin.database.OfflineDatabase
 import com.syntex_error.epbpos_kotlin.database.models.Items
-import com.syntex_error.epbpos_kotlin.databinding.ActivityProductSearchBinding
+import com.syntex_error.epbpos_kotlin.databinding.ActivityProductListBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class ProductSearch : AppCompatActivity(), Items_edit_adpater.Interaction {
+class ProductList : AppCompatActivity(), Items_pos_adpater.Interaction {
     private lateinit var localDb: OfflineDatabase
-    private lateinit var mAdapter: Items_edit_adpater
+    private lateinit var mAdapter: Items_pos_adpater
     private var nameList: List<String> = mutableListOf(
         "test",
         "xyz",
@@ -22,19 +23,27 @@ class ProductSearch : AppCompatActivity(), Items_edit_adpater.Interaction {
         "pokemon",
         "2test",
         "Pen",
+        "Pen",
+        "Drive",
+        "pencil",
+        "orange",
+        "pro-test",
+        "pencil",
+        "orange",
+        "pro-test",
         "Drive",
         "pencil",
         "orange",
         "pro-test"
     )
-    private lateinit var binding: ActivityProductSearchBinding
+    private lateinit var binding: ActivityProductListBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding = ActivityProductSearchBinding.inflate(layoutInflater)
+        binding = ActivityProductListBinding.inflate(layoutInflater)
         setContentView(binding.root)
         localDb = OfflineDatabase(applicationContext)
-        mAdapter = Items_edit_adpater(this)
+        mAdapter = Items_pos_adpater(this)
         loadItems()
 
         binding.products.apply {
@@ -43,7 +52,6 @@ class ProductSearch : AppCompatActivity(), Items_edit_adpater.Interaction {
         }
 
     }
-
     private fun loadItems() {
         CoroutineScope(Dispatchers.IO).launch {
             val list = localDb.cartDao().getAll()
@@ -60,7 +68,7 @@ class ProductSearch : AppCompatActivity(), Items_edit_adpater.Interaction {
 
     private fun createDemoProduct() {
         val list: MutableList<Items> = mutableListOf()
-        for (i in 0..9) {
+        for (i in 0..12) {
             val model = Items()
             model.name = nameList[i]
             list.add(model)

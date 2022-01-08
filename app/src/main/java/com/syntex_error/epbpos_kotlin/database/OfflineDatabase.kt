@@ -9,7 +9,7 @@ import com.syntex_error.epbpos_kotlin.database.models.Items
 
 @Database(
     entities = [Items::class],
-    version = 1,
+    version = 2,
     exportSchema = false
 )
 abstract class OfflineDatabase : RoomDatabase() {

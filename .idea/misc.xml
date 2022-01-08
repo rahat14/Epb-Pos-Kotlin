@@ -4,7 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AKR/EPB-POS/Epb-Pos-Kotlin-/app/src/main/res/drawable/grad.xml" value="0.35128205128205126" />
+        <entry key="..\:/AKR/EPB-POS/Epb-Pos-Kotlin-/app/src/main/res/drawable/gradient.xml" value="0.18177083333333333" />
+        <entry key="..\:/AKR/EPB-POS/Epb-Pos-Kotlin-/app/src/main/res/layout/activity_product_list.xml" value="0.340625" />
+        <entry key="..\:/AKR/EPB-POS/Epb-Pos-Kotlin-/app/src/main/res/layout/activity_product_search.xml" value="0.340625" />
         <entry key="..\:/AKR/EPB-POS/Epb-Pos-Kotlin-/app/src/main/res/layout/item_pos_product.xml" value="0.340625" />
+        <entry key="..\:/AKR/EPB-POS/Epb-Pos-Kotlin-/app/src/main/res/layout/item_product_horizontral.xml" value="0.340625" />
         <entry key="..\:/AKR/EPB-POS/Epb-Pos-Kotlin-/app/src/main/res/layout/item_product_vertical.xml" value="0.340625" />
         <entry key="..\:/AKR/EPB-POS/Epb-Pos-Kotlin-/app/src/main/res/layout/item_supplier.xml" value="0.340625" />
         <entry key="..\:/AKR/EPB-POS/Epb-Pos-Kotlin-/app/src/main/res/layout/row_cart_item.xml" value="0.340625" />
